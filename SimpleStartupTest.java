@@ -21,7 +21,8 @@ public class SimpleStartupTest {
     String testType = locations.contains(guess) ? "Success" : "Fail";
     String result = SS.checkYourself(guess);
     String testResult = "Failed";
-    if ((testType.equals("Success") && result == "hit") || (testType.equals("Fail") && result == "miss")) {
+    if ((testType.equals("Success") && result == GuessResult.HIT.getText())
+        || (testType.equals("Fail") && result == GuessResult.MISS.getText())) {
       testResult = "Passed";
     }
     System.out.println(testType + " test type result: " + testResult);

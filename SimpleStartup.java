@@ -20,16 +20,16 @@ public class SimpleStartup {
   }
 
   public String checkYourself(int guess) {
-    String result = "miss";
+    String result = GuessResult.MISS.getText();
     for (int cell : locationCells) {
       if (guess == cell) {
-        result = "hit";
+        result = GuessResult.HIT.getText();
         this.numOfHits++;
         break;
       }
     }
     if (numOfHits == locationCells.length) {
-      result = "kill";
+      result = GuessResult.KILL.getText();
       this.isAlive = false;
     }
     System.out.println(result);

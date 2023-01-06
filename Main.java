@@ -16,7 +16,7 @@ public class Main {
       System.out.println("Take a guess:");
       int guess = Integer.parseInt(csl.readLine());
       String guessResult = startup.checkYourself(guess);
-      if (guessResult.equals("miss")) {
+      if (guessResult.equals(GuessResult.MISS.getText())) {
         numOfGuesses++;
       }
     }
