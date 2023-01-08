@@ -19,7 +19,9 @@ public class Main {
       if (guessResult.equals(GuessResult.MISS.getText())) {
         numOfGuesses++;
       }
+      System.out.println("Your guess was a: " + guessResult);
     }
+    System.out.println("You finished the game!!!");
     System.out.println("You missed -" + numOfGuesses + "- guesses.");
   }
 }
