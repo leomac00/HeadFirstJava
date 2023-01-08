@@ -1,4 +1,4 @@
-public class SimpleStartup {
+public class SimpleStartup implements BattleshipGame {
   private boolean isAlive = true;
   private int[] locationCells;
   private int numOfHits = 0;
