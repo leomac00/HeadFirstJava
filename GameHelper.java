@@ -15,8 +15,9 @@ public class GameHelper {
   public String getUserInput(String prompt) {
     System.out.print(prompt + ": ");
     Scanner scanner = new Scanner(System.in);
-    return scanner.nextLine().toLowerCase();
-
+    String text = scanner.nextLine().toLowerCase();
+    scanner.close();
+    return text;
   }
 
   public ArrayList<String> placeStartup(int startupSize) {
