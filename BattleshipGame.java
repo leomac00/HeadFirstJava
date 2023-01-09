@@ -1,10 +1,9 @@
 public interface BattleshipGame {
-  public void setLocationCells(int[] locationCells);
+  void setUpGame();
 
-  public String checkYourself(int guess);
+  void startPlaying();
 
-  public int[] getLocationCells();
+  void checkUserGuess(String guess);
 
-  public boolean isAlive();
-
+  void finishGame();
 }
