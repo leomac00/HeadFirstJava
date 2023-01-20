@@ -1,4 +1,5 @@
 public interface BattleshipGame {
+
   void setUpGame();
 
   void startPlaying();

@@ -23,7 +23,6 @@ public class StartupBust implements BattleshipGame {
       ArrayList<String> newLocations = helper.placeStartup(3);
       startup.setLocationCells(newLocations);
     }
-
   }
 
   public void startPlaying() {
